@@ -5,6 +5,48 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased] -
+
+### Fixed
+- Add `relative_url` filter to author profile image. [#125](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/125)
+- Fix rake vulnerability in `.gemspec` file.
+
+## [1.4.4] - 2019-08-20
+
+### Fixed
+- Fix MIME-type issues with Lunr search by renaming `search-data.json` to `lunr/lunr.store.js`. [#82](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/82)
+
+## [1.4.3] - 2019-08-20
+
+### Changed
+- Relax Jekyll dependency to allow for version 4.0.
+
+## [1.4.2] - 2019-07-18
+
+### Added
+- Document `site.copyright` override for customizing footer copyright text.
+
+### Changed
+- Update links to LICENSE. [#102](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/102)
+- Update GitHub issue templates.
+
+### Fixed
+- Fix theme text strings for `search_placeholder_text` and `results_found`. [#104](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/104)
+- Remove stray `console.log` from lunr-search-scripts [#105](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/105)
+- Add missing `/` in icon-gitlab.html. [#80](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/80)
+
+## [1.4.1] - 2018-08-07
+
+### Added
+- Add sample "404 not found page" to `/docs/404.html` and `/example/404.html`. [#12](https://github.com/mmistakes/jekyll-theme-basically-basic/issues/12)
+
+### Changed
+- Adjust default skin colors to meet WCAG 2 AA. [#68](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/68)
+
+### Fixed
+- Remove extra footer from cv.html `layout`. [#69](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/69)
+- Fix JavaScript error when search is not enabled. [#66](https://github.com/mmistakes/jekyll-theme-basically-basic/pull/66)
+
 ## [1.4.0] - 2018-04-02
 
 ### Changed

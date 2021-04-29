@@ -1,6 +1,6 @@
 # [Basically Basic Jekyll Theme][1]
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE.md)
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg)](https://jekyllrb.com/)
 [![Ruby gem](https://img.shields.io/gem/v/jekyll-theme-basically-basic.svg)](https://rubygems.org/gems/jekyll-theme-basically-basic)
 [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
@@ -15,6 +15,10 @@ few enhancements thrown in for good measure:
 - Site-wide search provided by [Algolia](https://www.algolia.com/) or [Lunr](https://lunrjs.com/).
 - Disqus Comments and Google Analytics support
 - SEO best practices via [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/)
+
+**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) for developing and maintaining it.**
+
+[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 
 [![Basically Basic live preview][2]][1]
 
@@ -49,6 +53,7 @@ few enhancements thrown in for good measure:
    8. [Reading Time](#reading-time)
    9. [Comments (via Disqus)](#comments-via-disqus)
    10. [Google Analytics](#google-analytics)
+   11. [Copyright](#copyright)
 5. [Layouts](#layouts)
    1. [`layout: default`](#layout-default)
    2. [`layout: post`](#layout-post)
@@ -133,14 +138,13 @@ branch off of `master`. For more details on how to set things up check
 If you forked or downloaded the `jekyll-theme-basically-basic` repo you can 
 safely remove the following files and folders:
 
-- `.codeclimate.yml`
 - `.editorconfig`
 - `.gitattributes`
 - `.github`
 - `.scss-lint.yml`
 - `CHANGELOG.md`
 - `jekyll-theme-basically-basic.gemspec`
-- `LICENSE.md`
+- `LICENSE`
 - `Rakefile`
 - `README.md`
 - `screenshot.png`
@@ -157,10 +161,10 @@ site and you should something similar to:
 
 ```
 <!--
-    Basically Basic Jekyll Theme 1.2.0
+    Basically Basic Jekyll Theme 1.4.4
     Copyright 2017-2018 Michael Rose - mademistakes.com | @mmistakes
     Free for personal and commercial use under the MIT license
-    https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE.md
+    https://github.com/mmistakes/jekyll-basically-theme/blob/master/LICENSE
 -->
 ```
 
@@ -347,6 +351,10 @@ t:
   skip_content: "Skip to content"
   skip_footer: "Skip to footer"
   menu: "Menu"
+  search: "Search"
+  site_search: "Site Search"
+  results_found: "Result(s) found"
+  search_placeholder_text: "Enter your search term..."
   home: "Home"
   newer: "Newer"
   older: "Older"
@@ -555,6 +563,18 @@ to `_config.yml` like so:
 
 Similar to comments, the Google Analytics tracking script will only appear in 
 production when using the following environment value: `JEKYLL_ENV=production`.
+
+### Copyright
+
+By default the copyright line in the footer displays the current year 
+(at build time) followed by your site's title. e.g. `© 2018 Basically Basic.`
+
+If you would like to change this add `copyright` to your `_config.yml` file 
+with appropriate text:
+
+```yaml
+copyright: "My custom copyright."
+```
 
 ## Layouts
 
